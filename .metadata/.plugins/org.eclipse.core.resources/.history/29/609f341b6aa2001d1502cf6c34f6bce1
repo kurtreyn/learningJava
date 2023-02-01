@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author kurtreyn
+ *
+ */
+module projectLearningJava {
+}

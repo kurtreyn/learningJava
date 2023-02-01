@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/Users/kurtreyn/Repos/learningJava/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+3939774360.index
