@@ -31,23 +31,24 @@ public class MenuRunner {
 
 		} finally {
 			scanner.close();
+
 		}
 
 	}
 
-	private static void performOperationUsingNestedIfElse(int number1, int number2, int choice) {
-		if (choice == 1) {
-			System.out.println("Result " + (number1 + number2));
-		} else if (choice == 2) {
-			System.out.println("Result " + (number1 - number2));
-		} else if (choice == 3) {
-			System.out.println("Result " + (number1 * number2));
-		} else if (choice == 4) {
-			System.out.println("Result " + (number1 / number2));
-		} else {
-			System.out.println("Invalid Operation");
-		}
-	}
+//	private static void performOperationUsingNestedIfElse(int number1, int number2, int choice) {
+//		if (choice == 1) {
+//			System.out.println("Result " + (number1 + number2));
+//		} else if (choice == 2) {
+//			System.out.println("Result " + (number1 - number2));
+//		} else if (choice == 3) {
+//			System.out.println("Result " + (number1 * number2));
+//		} else if (choice == 4) {
+//			System.out.println("Result " + (number1 / number2));
+//		} else {
+//			System.out.println("Invalid Operation");
+//		}
+//	}
 
 	private static void performOperationUsingSwitch(int number1, int number2, int choice) {
 		switch (choice) {
