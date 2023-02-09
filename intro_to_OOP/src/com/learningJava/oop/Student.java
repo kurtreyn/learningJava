@@ -1,19 +1,54 @@
 package com.learningJava.oop;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class Student {
 
-	public static void main(String[] args) {
-		String names[] = { "Jon", "Kurt" };
-		int[] marks = { 1, 3, 5, 9 };
+	private String name;
+	private int[] marks;
 
-//		System.out.println(marks[0]);
+	public Student(String name, int[] marks) {
+		this.name = name;
+		this.marks = marks;
+	}
 
-		int[] grades = new int[8];
+	public int getNumberOfMarks() {
+		return marks.length;
+	}
 
-		for (int i = 0; i < marks.length; i++) {
-			System.out.println(marks[i]);
+	public int getTotalSumofMarks() {
+		int sum = 0;
+		for (int mark : marks) {
+			sum += mark;
 		}
+		return sum;
+	}
 
+	public int getMaximumMark() {
+		int maximum = 0;
+		for (int mark : marks) {
+			if (mark > maximum) {
+				maximum = mark;
+			}
+		}
+		return maximum;
+	}
+
+	public int getMinimumMark() {
+		int minimum = Integer.MAX_VALUE;
+		for (int mark : marks) {
+			if (mark < minimum) {
+				minimum = mark;
+			}
+		}
+		return minimum;
+	}
+
+	public BigDecimal getAverageMarks() {
+		int sum = getTotalSumofMarks();
+		int number = getNumberOfMarks();
+		return new BigDecimal(sum).divide(new BigDecimal(number), 3, RoundingMode.UP);
 	}
 
 }
