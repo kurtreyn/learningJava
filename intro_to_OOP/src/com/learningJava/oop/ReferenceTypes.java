@@ -1,5 +1,8 @@
 package com.learningJava.oop;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
+
 public class ReferenceTypes {
 
 	public static void main(String[] args) {
@@ -21,6 +24,28 @@ public class ReferenceTypes {
 
 //		System.out.println(string2.equals("value"));
 //		System.out.println(string2.equalsIgnoreCase("VAlue"));
+
+		// Wrapper classes
+//		Integer integer = new Integer(5);
+//		System.out.print(integer);
+
+		Integer i3 = Integer.valueOf(5);
+//		System.out.println(i3);
+
+		// AutoBoxing
+		Integer i4 = 5;
+//		System.out.println(i4);
+
+		LocalDate nowDate = LocalDate.now();
+//		System.out.println(nowDate);
+
+		LocalTime nowTime = LocalTime.now();
+//		System.out.println(nowTime);
+
+//		System.out.println(nowDate.getMonth());
+
+		LocalDate yesterday = LocalDate.of(2023, 2, 7);
+//		System.out.println(yesterday);
 
 	}
 
