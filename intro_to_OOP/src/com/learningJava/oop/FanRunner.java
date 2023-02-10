@@ -7,7 +7,7 @@ public class FanRunner {
 
 		fan.switchOn();
 
-		fan.setSpeed((byte) 6);
+		fan.setSpeed((byte) 3);
 
 		System.out.println(fan);
 
